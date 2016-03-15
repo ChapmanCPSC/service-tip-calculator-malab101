@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tipCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,120 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP CALCULATOR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aju-ym-dnO">
+                                <rect key="frame" x="189" y="28" width="222" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="U7L-H9-JuS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-9m-sHL">
+                                <rect key="frame" x="252" y="114" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="8Rk-0I-2g2"/>
+                                    <constraint firstAttribute="height" constant="30" id="UB7-bL-Hpx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the damage?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhZ-iZ-pI5">
+                                <rect key="frame" x="222" y="85" width="157" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="on1-57-LKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkF-a4-Ktz">
+                                <rect key="frame" x="361" y="221" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="GOd-EO-mzc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you rate the service? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-QF-hAj">
+                                <rect key="frame" x="167" y="188" width="266" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="89d-oh-0UH"/>
+                                    <constraint firstAttribute="height" constant="21" id="d5f-Hz-lMX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jR2-rk-F7p">
+                                <rect key="frame" x="223" y="289" width="154" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="JcL-Ot-sn7"/>
+                                    <constraint firstAttribute="height" constant="21" id="KuA-jH-UgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="9V9-AC-r6b">
+                                <rect key="frame" x="253" y="217" width="94" height="29"/>
+                                <color key="tintColor" red="0.2166849747" green="0.69040009469999997" blue="0.060679358769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ratingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jEN-p5-e5w"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Q6-Oy7">
+                                <rect key="frame" x="222" y="221" width="13" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="lLM-ri-8cE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47d-yn-amZ">
+                                <rect key="frame" x="295" y="254" width="11" height="20"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.69411764705882351" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rKy-QF-hAj" firstAttribute="centerX" secondItem="g0D-9m-sHL" secondAttribute="centerX" id="02i-8L-VmM"/>
+                            <constraint firstItem="3Fg-Q6-Oy7" firstAttribute="baseline" secondItem="ZkF-a4-Ktz" secondAttribute="baseline" id="0aF-MB-3vm"/>
+                            <constraint firstItem="9V9-AC-r6b" firstAttribute="leading" secondItem="3Fg-Q6-Oy7" secondAttribute="trailing" constant="18" id="8NA-gb-Mwt"/>
+                            <constraint firstItem="47d-yn-amZ" firstAttribute="top" secondItem="9V9-AC-r6b" secondAttribute="bottom" constant="5" id="Exr-zN-SUR"/>
+                            <constraint firstItem="aju-ym-dnO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="H1n-S9-MgI"/>
+                            <constraint firstItem="g0D-9m-sHL" firstAttribute="top" secondItem="VhZ-iZ-pI5" secondAttribute="bottom" constant="8" symbolic="YES" id="LCU-r8-i0V"/>
+                            <constraint firstItem="jR2-rk-F7p" firstAttribute="top" secondItem="3Fg-Q6-Oy7" secondAttribute="bottom" constant="47" id="QhX-j3-6fu"/>
+                            <constraint firstItem="g0D-9m-sHL" firstAttribute="centerX" secondItem="VhZ-iZ-pI5" secondAttribute="centerX" id="T1B-ag-H4H"/>
+                            <constraint firstItem="VhZ-iZ-pI5" firstAttribute="leading" secondItem="3Fg-Q6-Oy7" secondAttribute="leading" id="UDm-IW-Uay"/>
+                            <constraint firstItem="VhZ-iZ-pI5" firstAttribute="top" secondItem="aju-ym-dnO" secondAttribute="bottom" constant="8" symbolic="YES" id="UYV-Nd-mkX"/>
+                            <constraint firstItem="9V9-AC-r6b" firstAttribute="centerX" secondItem="rKy-QF-hAj" secondAttribute="centerX" id="UhD-L8-Cff"/>
+                            <constraint firstItem="jR2-rk-F7p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wv5-sX-o1O"/>
+                            <constraint firstItem="rKy-QF-hAj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPI-XH-lZh"/>
+                            <constraint firstItem="47d-yn-amZ" firstAttribute="centerX" secondItem="jR2-rk-F7p" secondAttribute="centerX" id="Zjn-2C-qyx"/>
+                            <constraint firstItem="ZkF-a4-Ktz" firstAttribute="leading" secondItem="9V9-AC-r6b" secondAttribute="trailing" constant="14" id="aO7-9f-EYf"/>
+                            <constraint firstItem="aju-ym-dnO" firstAttribute="centerX" secondItem="VhZ-iZ-pI5" secondAttribute="centerX" id="cjJ-Re-iHD"/>
+                            <constraint firstItem="3Fg-Q6-Oy7" firstAttribute="firstBaseline" secondItem="ZkF-a4-Ktz" secondAttribute="firstBaseline" id="dfJ-Zz-1fP"/>
+                            <constraint firstItem="47d-yn-amZ" firstAttribute="centerX" secondItem="9V9-AC-r6b" secondAttribute="centerX" id="ewd-3G-ons"/>
+                            <constraint firstItem="9V9-AC-r6b" firstAttribute="top" secondItem="rKy-QF-hAj" secondAttribute="bottom" constant="8" symbolic="YES" id="kaQ-dx-sol"/>
+                            <constraint firstItem="rKy-QF-hAj" firstAttribute="top" secondItem="g0D-9m-sHL" secondAttribute="bottom" constant="44" id="lFg-gW-wmv"/>
+                            <constraint firstItem="3Fg-Q6-Oy7" firstAttribute="top" secondItem="rKy-QF-hAj" secondAttribute="bottom" constant="12" id="osj-UQ-oaC"/>
+                            <constraint firstItem="9V9-AC-r6b" firstAttribute="centerY" secondItem="3Fg-Q6-Oy7" secondAttribute="centerY" id="vpT-7R-5FP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Total" destination="g0D-9m-sHL" id="tdO-xR-Wnc"/>
+                        <outlet property="stepValueLabel" destination="47d-yn-amZ" id="TRy-Re-dVZ"/>
+                        <outlet property="tipLabel" destination="jR2-rk-F7p" id="Ihk-pJ-O6Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="565" y="418"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.90814393939393945" green="0.20429095363234692" blue="0.18439078709511064" alpha="1" colorSpace="calibratedRGB"/>
 </document>
